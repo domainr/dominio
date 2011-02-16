@@ -1,0 +1,134 @@
+body.default{
+	background: url(../images/bg.png) no-repeat;
+	margin: 0px;
+}
+#header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: url(../images/trans.png);
+	padding: 15px;
+	z-index: 100;
+}
+#logo{
+	display: block;
+	background: url(../images/logo.png) no-repeat;
+	height: 50px;
+	width: 201px;
+}
+
+input{
+	width: 270px;
+	height: 50px;
+	background: #fff;
+	-webkit-border-radius: 8px;
+	margin: 0 auto;
+	-webkit-appearance: textfield;
+	border: 0px;
+	padding: 0 10px;
+	font-size: 20px;
+	text-transform: lowercase;
+	font-family: "Arial";
+}
+#results{
+	margin-top: 130px;
+}
+.item{
+	padding: 8px 15px;
+	font-size: 18px;
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	opacity: .3;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: .2s;
+}
+.selected{
+	background: #000;
+}
+.availability{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-family: "Arial";
+	font-weight: normal;
+}
+.last{
+	border: 0px;
+	margin-bottom: 15px;
+}
+.available{
+	font-weight: bold;
+}
+.taken, .unavailable{
+	color: #ccc;
+	font-style: italic;
+}
+#spinner{
+	background: url(../images/spinner.png) center center no-repeat;
+	height: 32px;
+	width: 32px;
+	display: block;
+	position: fixed;
+	bottom: 15px;
+	right: 15px;
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to { 
+		-webkit-transform: rotate(360deg);
+	}
+}
+.spin { 
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 1.0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+#details{
+	position: fixed;
+	bottom: -250px;
+	left: 0;
+	display: block;
+	width: 290px;
+	padding: 10px 15px;
+	background: url(../images/trans80.png);
+	color: #fff;
+	-webkit-transition-property: bottom;
+	-webkit-transition-duration: .3s;
+}
+#details #close{
+	position: relative;
+	top: -2px;
+	right: -15px;
+	display: block;
+	float: right;
+	width: 30px;
+	height: 30px;
+}
+#details h1{
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	float: left;
+}
+#details p{
+	clear: both;
+	margin: 0;
+	padding: 0 0 5px 0;
+}
+.buttons-wrapper{
+	margin: 0 auto;
+	text-align: center;
+}
+#details div.button{
+	display: inline-block;
+	padding: 6px;
+	font-size: 16px;
+	text-transform: uppercase;
+	background: #212121;
+	-webkit-border-radius: 4px;
+}

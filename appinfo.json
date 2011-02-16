@@ -1,0 +1,10 @@
+{
+	"id": "com.prettyappmachine.dominio",
+	"version": "1.0.1",
+	"vendor": "Pretty App Machine",
+	"type": "web",
+	"main": "index.html",
+	"title": "Dominio",
+	"icon": "images/icon64.png",
+	"splashicon": "images/icon256.png"
+}
