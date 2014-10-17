@@ -26,10 +26,10 @@ MainAssistant.prototype = {
 			q = query;
 			$("search").value = q;
 		}else{
-			q = $("search").value; //query value	
+			q = $("search").value; //query value
 		}
 		q = q.toLowerCase();
-		var url = "http://domai.nr/api/json/search?q=" + encodeURIComponent(q);
+		var url = "https://domainr.com/api/json/search?q=" + encodeURIComponent(q);
 		var that = this;
 		this.toggleSpinner(true);
 		this.queue.push(q);
@@ -91,7 +91,7 @@ MainAssistant.prototype = {
 		var that = this;
 		$('search').observe('keyup', function(e){
 			setTimeout(function(){
-				that.search();				
+				that.search();
 			}, 1000);
 		});
 		this.controller.listen("results-list", Mojo.Event.listTap, this.handleListTap.bind(this));
