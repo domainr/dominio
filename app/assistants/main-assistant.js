@@ -29,7 +29,7 @@ MainAssistant.prototype = {
 			q = $("search").value; //query value
 		}
 		q = q.toLowerCase();
-		var url = "https://domainr.com/api/json/search?client_id=dominio&q=" + encodeURIComponent(q);
+		var url = "https://api.domainr.com/v1/search?client_id=dominio&q=" + encodeURIComponent(q);
 		var that = this;
 		this.toggleSpinner(true);
 		this.queue.push(q);
